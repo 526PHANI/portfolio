@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+     
+        body {
+            background-color: black; /* Black background */
+            color: #00FF00; /* Bright green text */
+            font-family: 'Courier New', Courier, monospace; /* Monospace font for a coding feel */
+            margin: 0;
+            padding: 0;
+        }
+        
+    
+        /* Header Style */
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 5px 20px; /* Smaller padding for a smaller nav bar */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+    
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+    
+        nav {
+            display: flex;
+            
+        }
+    
+        nav a {
+            color: #ffffff;
+
+            text-decoration: none;
+            margin: 0 15px; /* Increased margin for better spacing */
+            font-weight: bold;
+            transition: color 0.3s;
+            
+        }
+    
+        nav a:hover {
+            color: #ffcc00;
+        }
+    
+        /* General Section Styles */
+        section {
+            height: 100vh; /* Full screen height */
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    
+        h2 {
+            border-bottom: 2px solid #35424a;
+            padding-bottom: 5px;
+            margin-bottom: 20px; /* Added margin for better separation */
+        }
+    
+        /* Specific Styles for Introduction and Skills Sections */
+        #introduction {
+            margin-bottom: 0; /* Ensures no extra space after intro */
+            padding-bottom: 5px; /* Small padding for breathing room */
+        }
+    
+        #skills {
+            padding-top: 5px; /* Further minimized space between intro and skills */
+        }
+    
+        /* Project Details and Images Layout */
+        #project1 {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto; /* Added margin for spacing from sections */
+        }
+        
+        #project1 .project-details {
+            flex: 0 0 40%; /* Fixed width for 40% space */
+            padding-right: 20px; /* Space between text and images */
+            text-align: left; /* Align text to the left */
+        }
+        
+        #project1 .project-images {
+            flex: 0 0 60%; /* Fixed width for 60% space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center images horizontally */
+            padding-left: 20px; /* Space on the left side */
+        }
+    
+        /* Styling for images */
+        img {
+            max-width: 100%; /* Ensure images fit within their container */
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Button Styles */
+        .button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s;
+            font-size: 16px; /* Increased font size for better visibility */
+        }
+    
+        .button:hover {
+            background-color: #ffcc00;
+        }
+    
+        /* Footer Styling */
+        footer {
+            background-color: #1A1A1A; /* Dark gray for the footer */
+            padding: 10px;
+            text-align: center;
+            color: #00FF00; /* Green text for footer */
+            font-size: 14px; /* Adjust font size if necessary */
+            opacity: 0.8; /* Slightly transparent background for better visibility */
+        }
+        
+        footer a {
+            color: cornflowerblue; /* Green text for links */
+            text-decoration: underline; /* Underline for links */
+        }
+        
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #project1 {
+                flex-direction: column; /* Stack project details and images on small screens */
+                align-items: center; /* Center align items */
+            }
+    
+            #project1 .project-details,
+            #project1 .project-images {
+                padding-right: 0;
+                padding-left: 0; /* Remove side paddings */
+                margin-bottom: 20px; /* Added margin for spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Data Analyst Portfolio</h1>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="introduction" style="font-size: 18px;">
+    <h2 style="font-size: 24px;">Data Analyst & Dashboard Specialist - Ready for Your Projects</h2>
+    <p>Hello,</p>
+    <p>I am a skilled data analyst with expertise in SQL, Excel, Power BI and Python currently seeking freelance opportunities to assist clients with data analysis projects.</p>
+    <h3 style="font-size: 20px;">Benefits of Working with Me:</h3>
+    <ul style="text-align: left;">
+        <li>Available 24/7 for your data analysis needs.</li>
+        <li>Projects can be delivered within one day.</li>
+        <li>Special offer: I will work for 50% of your estimated cost!</li>
+        <li>Committed to completing projects before the deadline.</li>
+        <li>Thorough quality checks to ensure accuracy and reliability.</li>
+    </ul>
+    <p>I also have practical offline experience as a part-time data reporter for two schools, which has enhanced my data reporting and analytical skills.</p>
+
+</section>
+
+
+<section id="skills" style="font-size: 18px;">
+    <h2 style="font-size: 24px;">Technical Skills</h2>
+    <ul style="text-align: left; list-style-type: none; padding-left: 0;">
+        <li style="display: flex; justify-content: flex-start;">
+            <span style="width: 90px;">Excel</span> 
+            <span>- Data Analysis and Visualization (Pivot Tables, VLOOKUP, Power Query)</span>
+        </li>
+        <li style="display: flex; justify-content: flex-start;">
+            <span style="width: 90px;">SQL</span> 
+            <span>- Data Manipulation and Querying (Joins, Subqueries, Window Functions) (<a href="https://www.hackerrank.com/certificates/6e732b852bfb" target="_blank" style="color: cornflowerblue;">HackerRank SQL Certified (Click To See)</a>)</span>
+        </li>
+        <li style="display: flex; justify-content: flex-start;">
+            <span style="width: 90px;">Power BI</span> 
+            <span>- Dashboard Creation and Data Visualization (Data Modeling, DAX, Interactive Dashboards)</span>
+        </li>
+        <li style="display: flex; justify-content: flex-start;">
+            <span style="width: 90px;">Python</span> 
+            <span>- Data Cleaning and Analysis (Pandas, Numpy, Matplotlib)</span>
+        </li>
+        <li style="display: flex; justify-content: flex-start;">
+            <span style="width: 90px;">Tools</span> 
+            <span>- Git, Jupyter Notebook, Power BI, Tableau</span>
+        </li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2 style="text-align: center;">Some Sample Projects</h2>
+    
+    <div class="project-container" style="display: flex;">
+        <!-- Project Details Section -->
+        <div class="project-details" style="width: 40%; padding: 20px; box-sizing: border-box;">
+            <h3>Mobile Device Usage Analysis</h3>
+            
+            <p style="text-align: left;">
+                This project analyzes mobile device usage patterns, focusing on app usage time, screen time, battery drain, and app installation across different demographics.
+            </p>
+
+            <h3>Objectives</h3>
+            <p style="text-align: left;">To uncover insights into user behavior related to mobile devices, aiding manufacturers and marketers in understanding usage trends across age groups and genders.</p>
+
+            <h3>Key Insights</h3>
+            <ul style="text-align: left; font-size: 1.1em;">
+                <li>The majority of users prefer Android devices, with a significant portion using iOS, indicating a dominant market presence for Android.</li>
+                <li>The distribution of device models shows that the Xiaomi Mi 11 and iPhone 12 are the most popular among users, highlighting brand preference.</li>
+                <li>Battery drain varies slightly across models, with the iPhone 12 showing the highest average consumption, suggesting its potential impact on user experience.</li>
+                <li>Screen on time shows a positive trend with age, peaking in the 30-40 age range, indicating greater engagement among these users.</li>
+                <li>Data usage patterns reveal differences between genders, with females generally consuming more data, particularly in the younger age groups.</li>
+                <li>The number of apps installed fluctuates across age groups, peaking in middle age, suggesting tech-savvy behavior among this demographic.</li>
+            </ul>
+            
+            
+        </div>
+
+        <!-- Project Images Section -->
+        <div class="project-images" style="width: 60%; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px;">
+            
+            <img src="dataset.jpeg" alt="Image of Dataset" style="width: 100%; height: auto;">
+            <img src="dashboard.png" alt="Image of Dashboard" style="width: 100%; height: auto;">
+        </div>
+    </div>
+</section>
+
+
+<section id="projects">
+
+    <div class="project-container" style="display: flex;">
+    <div class="project-details" style="width: 40%; padding: 20px; box-sizing: border-box;">
+        <h3>E-commerce Sales Performance Analysis</h3>
+        <h3>Project Overview</h3>
+        <p style="text-align: left;">
+            A comprehensive analysis of e-commerce sales data to identify trends and patterns across various 
+            demographics, including customer type and product line.
+        </p>
+
+        <h3>Objectives</h3>
+        <p style="text-align: left;">To provide actionable insights for improving sales strategies and enhancing customer experience.</p>
+
+        <h3>Key Insights</h3>
+        <ul style="text-align: left; font-size: 1.1em;">
+            <li>Online promotions significantly increased sales during holiday seasons.</li>
+            <li>Female customers had a higher preference for fashion products compared to males.</li>
+            <li>Data showed a clear trend of increasing online purchases post-pandemic.</li>
+        </ul>
+    </div>
+    
+    <!-- Project Images Section -->
+    <div class="project-images" style="width: 60%; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px;">
+            
+        <img src="dataset2.jpeg" alt="Image of Dataset" style="width: 100%; height: auto;">
+        <img src="dashboard2.png" alt="Image of Dashboard" style="width: 100%; height: auto;">
+    </div>
+</div>
+</section>
+
+<footer>
+    <div class="contact"></div>
+    <p>Contact: <a href="mailto:phanindra8383@gmail.com">phanindra8383@gmail.com</a> | WhatsApp: <a href="https://wa.me/917981859681">+91 7981859681</a></p>
+</footer>
+
+
+</body>
+</html>
